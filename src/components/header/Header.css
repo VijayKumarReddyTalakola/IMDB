@@ -12,14 +12,14 @@
 }
 
 a > span{
-    margin: 0 30px; 
+    margin: 0 20px; 
     font-size: 1.3rem;
     cursor: pointer;
     color: white;
 }
 
 a > span:hover{
-    color: red;
+    color: #f3ce13;
 }
 
 .header_icon{
@@ -29,4 +29,21 @@ a > span:hover{
 
 .user_avatar{
     font-size: 2rem;
+}
+
+
+@media screen and (max-width:480px) {
+    .header{
+        margin: 0 1rem;
+    }
+    a > span{
+        margin: 0 9px; 
+        font-size: 0.75rem;
+        cursor: pointer;
+        color: white;
+    }
+    .header_icon{
+        width: 50px;
+        cursor: pointer;
+    }
 }

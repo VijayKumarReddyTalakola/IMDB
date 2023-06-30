@@ -93,23 +93,23 @@ const Movie = () => {
               </div>
               <div className="movie_detailRightBottom">
                 <div className="synopsisText">Synopsis</div>
-                <div>{currentMovie?.overview || " "}</div>
+                <div className="movie_overview">{currentMovie?.overview || " "}</div>
               </div>
             </div>
           </div>
           <div className="movie_links">
-            <div className="movie_heading">Useful Links</div>
+            <span className="movie_heading">Useful Links</span>
               {currentMovie?.homepage && (
                 <a href={currentMovie.homepage} target="_blank" style={{ textDecoration: "none" }} rel="noreferrer">
                   <p>
-                    <span className="movie_homeButton movie_Button">Homepage<i className="newTab fas fa-external-link-alt"></i></span>
+                    <span className="movie_homeButton movie_Button">Homepage&nbsp;<i className="fas fa-external-link-alt"></i></span>
                   </p>
                 </a>
               )}
               {currentMovie?.imdb_id && (
                 <a href={"https://www.imdb.com/title/" + currentMovie.imdb_id} target="_blank" style={{ textDecoration: "none" }} rel="noreferrer">
                   <p>
-                    <span className="movie_imdbButton movie_Button">IMDb<i className="newTab fas fa-external-link-alt"></i></span>
+                    <span className="movie_imdbButton movie_Button">IMDb&nbsp;<i className="fas fa-external-link-alt"></i></span>
                   </p>
                 </a>
               )}

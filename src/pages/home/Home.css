@@ -50,3 +50,25 @@
     text-align: left;
     width: 50%;
 }
+
+@media screen and (max-width:480px) {
+    .posterImage{
+        width: auto;
+    }
+    .posterImage_description{
+        display: none;
+    }
+    .posterImage_title{
+        font-size: 20px;
+    }
+    .posterImage {
+        height: 300px;
+    }
+    .posterImage_rating{
+        font-size: 0.75rem;    
+    }
+    .posterImage_runtime{
+        font-size: 0.75rem;
+    }
+
+}

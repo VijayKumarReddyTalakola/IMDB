@@ -22,11 +22,19 @@ const Home = () => {
         transitionTime={3}
         infiniteLoop={true}
         showStatus={false}
+        showIndicators={false}
       >
         {popularMovies.map((movie) => (
-          <Link style={{ textDecoration: "none", color: "white" }} to={`/movie/${movie.id}`} key={movie.id}>
+          <Link
+            style={{ textDecoration: "none", color: "white" }}
+            to={`/movie/${movie.id}`}
+            key={movie.id}
+          >
             <div className="posterImage">
-              <img src={`https://image.tmdb.org/t/p/original${movie?.backdrop_path}`} alt="poster"/>
+              <img
+                src={`https://image.tmdb.org/t/p/original${movie?.backdrop_path}`}
+                alt="poster"
+              />
             </div>
             <div className="posterImage_overlay">
               <div className="posterImage_title">

@@ -11,7 +11,7 @@
 
 .movie_backdrop {
     width: 100%;
-    height: 500px;
+    height: 31.25rem;
     object-fit:cover;
     object-position: 0 35%;
 }
@@ -21,29 +21,30 @@
     width: 80%;
     display: flex;
     position: relative;
-    margin-top: -250px;
+    margin-top: -15.6rem;
+    height: fit-content;
 }
 
 .movie_detailLeft {
-    margin-right: 30px;
+    margin-right: 1.87rem;
 }
 
 .movie_poster {
-    width:300px;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 40px 6px;
+    width:18.75rem;
+    border-radius: 0.6rem;
+    box-shadow: rgba(0, 0, 0, 0.86) 0rem 1.37rem 2.5rem 0.3rem;
 }
 
 .movie_detailRight {
     color: white;
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: 25rem;
     justify-content:space-between ;
 }
 
 .movie_detailRightTop > div{
-    text-shadow: 0px 0px 5px #000000;
+    text-shadow: 0rem 0rem 0.3rem #000000;
     margin-bottom: .5rem;
 }
 
@@ -63,8 +64,8 @@
 
 .movie_genre {
     padding: .5rem;
-    border: 2px solid white;
-    border-radius: 20px;
+    border: 0.1rem solid white;
+    border-radius: 1.25rem;
     margin: 0.25rem 0.5rem;
 }
 
@@ -89,9 +90,9 @@
     display: flex;
     justify-content: space-between;
     width: 75%;
-    margin: 20px;
-    padding: 10px;
-    gap: 10px;
+    margin: 1.25rem;
+    padding: 0.6rem;
+    gap: 0.6rem;
 }
 
 .movie_heading {
@@ -103,12 +104,12 @@
     justify-content: center;
     align-items: center;
     padding: 0.8rem 2rem;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     cursor: pointer;
-    width: 150px;
+    width: 9.4rem;
     color: black;
     font-weight: bold;
-    margin: 0 10px;
+    margin: 0 0.6rem;
 }
 
 .movie_homeButton {
@@ -118,6 +119,7 @@
 .movie_imdbButton {
     background-color:#f3ce13;
 }
+
 .movie_production {
     width: 85%;
     display: flex;
@@ -125,15 +127,16 @@
     align-items: flex-end;
     flex-wrap: wrap;
     margin-bottom: 4rem;
-    gap: 10px;
+    gap: 0.6rem;
 }
 
 .movie_overview{
-    margin: 10px;
+    margin: 0.6rem;
 }
 
 .movie_productionComapany {
-    width: 200px;
+    width: 12.5rem;
+    height: 10rem;
     margin: 2rem;
 }
 
@@ -156,62 +159,64 @@
     .movie_detail{
         display: flex;
         flex-direction: column;
-        margin-top: 20px;
+        margin-top: 1.25rem;
     }
     .movie_detailLeft,.movie_detailRight {
-        margin-right: 0px;
+        margin-right: 0rem;
     }
     .movie_name{
-        font-size: 22px;
+        font-size: 1.37rem;
     }
     .movie_Button{
-        width: 85px;
+        width: 5.3rem;
     }
     .movie_links{
-        margin-top: 140px;
+        margin-top: 10rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     .movie_heading{
-        font-size: 25px;
+        font-size: 1.5rem;
     }
     .movie_productionComapany {
-        width: 50px;
+        width: 5rem;
+        height: 5rem;
+        margin: 0.5rem;
     }
     .movie_production{
-        margin-bottom: 10px;
+        margin-bottom: 0.06rem;
     }
     .movie_overview {
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
 
-@media screen and (min-width:480px) and (max-width: 768px){
+@media screen and (min-width:481px) and (max-width: 768px){
     .movie_links{
-        margin-top: 50px;
+        margin-top: 3.12rem;
     }
     .movie_detailRight{
-        margin-left: -80px;        
+        margin-left: -5rem;        
     }
     .movie_poster{
         width: 75%;
     }
     .movie_Button{
-        width: 80px;
+        width: 5rem;
     }
     .movie_name{
-        font-size: 22px;
+        font-size: 1.37rem;
     }
     .movie_overview{
-        font-size: 14px;
+        font-size: 0.87rem;
     }
     .movie_productionComapany{
-        width: 100px;
+        width: 6.25rem;
     }
     .movie_heading {
-        font-size: 30px;
+        font-size: 1.87rem;
     }
     
 }

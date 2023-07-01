@@ -14,6 +14,7 @@ const Movie = () => {
       .then((res) => res.json())
       .then((data) => setCurrentMovie(data));
   }, [id]);
+  console.log(currentMovie);
 
   useEffect(() => {
     const fetchData = () => {
@@ -85,7 +86,7 @@ const Movie = () => {
                 <div className="movie_genres">
                   {currentMovie?.genres &&
                     currentMovie.genres.map((genre) => (
-                      <span className="movie_genre" id={genre.id}>
+                      <span className="movie_genre" key={genre.id} id={genre.id}>
                         {genre.name}
                       </span>
                     ))}
@@ -118,7 +119,7 @@ const Movie = () => {
             <div className="movie_production">
               {currentMovie?.production_companies &&
                 currentMovie.production_companies.map((company) => (
-                  <div>
+                  <div key={company.id}>
                     { company.logo_path && (
                       <span className="productionCompanyImage">
                         <img className="movie_productionComapany" src={`https://image.tmdb.org/t/p/original${company.logo_path}`} alt="company"/>

@@ -12,7 +12,7 @@
 }
 
 a > span{
-    margin: 0 20px; 
+    margin: 0 1.25rem; 
     font-size: 1.3rem;
     cursor: pointer;
     color: white;
@@ -23,7 +23,7 @@ a > span:hover{
 }
 
 .header_icon{
-    width: 80px;
+    width: 5rem;
     cursor: pointer;
 }
 
@@ -37,13 +37,13 @@ a > span:hover{
         margin: 0 1rem;
     }
     a > span{
-        margin: 0 9px; 
+        margin: 0 0.5rem; 
         font-size: 0.75rem;
         cursor: pointer;
         color: white;
     }
     .header_icon{
-        width: 50px;
+        width: 3.1rem;
         cursor: pointer;
     }
 }

@@ -14,7 +14,6 @@ const Movie = () => {
       .then((res) => res.json())
       .then((data) => setCurrentMovie(data));
   }, [id]);
-  console.log(currentMovie);
 
   useEffect(() => {
     const fetchData = () => {

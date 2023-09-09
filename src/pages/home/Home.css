@@ -1,4 +1,7 @@
-.posterImage{
+
+.poster{
+    padding-top: 4rem;
+}.posterImage{
     height: 38rem;
 }
 
@@ -52,6 +55,9 @@
 }
 
 @media screen and (max-width:480px) {
+    .poster{
+        padding-top: 6rem;
+    }
     .posterImage{
         width: auto;
     }
@@ -62,14 +68,15 @@
         font-size: 1.25rem;
     }
     .posterImage {
-        height: fit-content;
+        height: 20rem;
     }
     .posterImage_rating{
         font-size: 0.75rem;    
     }
     .posterImage_runtime{
         font-size: 0.75rem;
-    }.posterImage_overlay {
+    }
+    .posterImage_overlay {
         padding: 1rem;
     }
 

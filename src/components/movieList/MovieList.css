@@ -1,11 +1,11 @@
 .movie_list{
-    padding: 0 3rem 3rem 3rem;
+    padding:3rem 3rem;
 }
 
 .list_title{
     text-align: center;
     font-size: 1.75rem;
-    margin: 2.5rem;
+    margin: 3rem 0 1rem 0;
 }
 
 .list_cards{
@@ -13,3 +13,5 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+

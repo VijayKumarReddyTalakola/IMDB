@@ -98,7 +98,7 @@ const Movie = () => {
             </div>
           </div>
           <div className="movie_links">
-            <span className="movie_heading">Useful Links</span>
+            {(currentMovie?.homepage || currentMovie?.imdb_id) && <span className="movie_heading">Useful Links</span>}
               {currentMovie?.homepage && (
                 <a href={currentMovie.homepage} target="_blank" style={{ textDecoration: "none" }} rel="noreferrer">
                   <p>
@@ -114,10 +114,9 @@ const Movie = () => {
                 </a>
               )}
             </div>
-            <div className="movie_heading">Production companies</div>
+            {currentMovie?.production_companies && <div className="movie_heading">Production companies</div>}
             <div className="movie_production">
-              {currentMovie?.production_companies &&
-                currentMovie.production_companies.map((company) => (
+              {(currentMovie?.production_companies)?.map((company) => (
                   <div key={company.id}>
                     { company.logo_path && (
                       <span className="productionCompanyImage">
